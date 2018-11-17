@@ -4,7 +4,10 @@
   "description": "words are hard.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/",
+    "dev:server": "nodemon server/",
+    "postinstall": "cd server && npm install"
   },
   "repository": {
     "type": "git",
@@ -16,5 +19,12 @@
   "bugs": {
     "url": "https://github.com/legoboyjr/my-first-server/issues"
   },
-  "homepage": "https://github.com/legoboyjr/my-first-server#readme"
+  "homepage": "https://github.com/legoboyjr/my-first-server#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "nodeman": "^1.1.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.6"
+  }
 }
