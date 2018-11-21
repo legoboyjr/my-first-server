@@ -4,7 +4,7 @@ const port = process.env.PORT || 4000;
 const path = require('path');
 
 const staticPath = path.resolve(__dirname, '../client/build');
-app.get('/', (request, response) => {	app.use(express.static(staticPath));
+app.use(express.static(staticPath));
 
 app.get('/hello/:name', (request, response) => {
     const { name } = request.params;
